@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        a {
+            color: green;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        a:visited {
+            color: red;
+        }
+
+        a:hover {
+            color: black;
+            text-decoration: underline;
+        }
+
+        a:active {
+            color: yellow;
+        }
+
+        .especial{
+            background-color: rgb(96, 190, 159);
+        }
+        .especial::after{
+            content: ' <--';
+        }
+
+        .especial::before{
+            content: '-> ';
+        }
+
+        a::before {
+            content: '[LINK] ';
+            color: darkgray;
+        }
+
+        a::after {
+            content: ' [LINK]';
+            color: darkgray;
+        }
+    </style>
+</head>
+<body>
+    <h1>Personalizando links</h1>
+    <ul>
+        <li><a href="https://www.youtube.com/" class="especial">Youtube</a></li>
+        <li><a href="https://www.instagram.com/" class="especial">Instagram</a></li>
+        <li><a href="https://web.telegram.org/">Telegram</a></li>
+    </ul>
+</body>
+</html>

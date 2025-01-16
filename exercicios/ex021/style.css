@@ -1,0 +1,68 @@
+@charset "UTF8";
+
+body {
+    font-family: 'Times New Roman', Times, serif;
+    background-color: lightgreen;
+
+}
+
+header {
+    text-align: center;
+    border-color: black;
+    border-width: 5px;
+    border-style: solid;
+}
+
+main {
+    background-color: white;
+    margin: 10px;
+    padding: 10px;
+
+    border-radius: 10px;
+}
+
+nav {
+    background-color: lightgray;
+    padding: 5px;
+    
+}
+
+
+nav > a {
+    text-decoration: none;
+    color: blue;
+    font-weight: bold;
+
+    border-style: solid;
+    border-color: black;
+    border-width: 2px;
+
+    box-shadow: 4px 2px 10px rgba(0, 0, 0, 0.521);
+
+}
+
+nav > a:hover {
+    color: red;
+    text-decoration: underline;
+}
+
+article {
+    background-color: lightgray;
+    padding: 5px;    
+}
+
+p {
+    margin: 0px;
+}
+
+article > aside {
+    background-color: #ac6767;
+}
+
+footer {
+    text-align: center;
+    background-color: gray;
+    border-color: red;
+    border-width: 2px;
+    border-style: solid;
+}
